@@ -41,6 +41,18 @@ class Component extends React.Component {
           </Button>
         </Buttons>
 
+        <Section className="rhulcompsoc-section-hackaway">
+          <img className="rhulcompsoc-hackaway-logo" src="https://su.rhul.ac.uk/asset/Organisation/7306/rh-white-montserrat-v5.svg" />
+          <p>
+            Windsor Building, Royal Holloway, University of London<br />
+            Saturday 5th February - Sunday 6th February 2022
+          </p>
+          <Buttons>
+            <Button className="rhulcompsoc-button-hackaway" href="https://royalhackaway.com/">
+              Royal Hackaway v5
+            </Button>
+          </Buttons>
+        </Section>
         <Section title="Events" tag="Our upcoming events">
           <iframe
             src="https://outlook.office365.com/owa/calendar/c7e1f5e07db149d6aba796592271f23b@computingsociety.co.uk/4a31afa127d440e18dcf3a5a529f0b492292299079619492672/calendar.html"
@@ -76,7 +88,7 @@ class Component extends React.Component {
             members to get together. From our weekly Friday pub social, cliché
             Minecraft survival games and other gaming activities, events on our
             discord server, to getting involved with SU club nights with 80s 90s
-            00. There is always some type of social to get our members involved.
+            00s. There is always some type of social to get our members involved.
           </p>
         </Section>
         <hr />
@@ -108,18 +120,35 @@ class Component extends React.Component {
           </p>
           <ul>
             <li>
-              <a href="https://www.facebook.com/rhulcompsoc">Facebook</a>
+              <a target="_blank" href="https://dc.cmpsc.uk/">Discord</a>
             </li>
             <li>
-              <a href="https://twitter.com/rhulcompsoc">Twitter</a>
+              <a target="_blank" href="https://github.com/rhul-compsoc">GitHub</a>
             </li>
             <li>
-              <a href="https://dc.cmpsc.uk/">Discord</a>
+              <a target="_blank" href="https://www.facebook.com/rhulcompsoc">Facebook</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/rhulcompsoc">Twitter</a>
             </li>
             <li>
               <a href="mailto:hello@computingsociety.co.uk">Email</a>
             </li>
           </ul>
+        </Section>
+        <hr />
+        <Section
+          title="Support"
+          tag="All of what we do is generously supported by our partners in industry."
+        >
+          <p>Interested in supporting us?</p>
+          <Button
+            className="rhulcompsoc-button-red"
+            href="https://cmpsc.uk/sponsor"
+            target="_blank"
+          >
+            Find out more
+          </Button>
         </Section>
       </div>
     );

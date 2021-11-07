@@ -1,7 +1,3 @@
-# su-page
+# SU Page
 
-The HTML content at https://www.su.rhul.ac.uk/societies/a-z/computing/#
-
-## Instructions
-
-Remember to inline the HTML with the [mailchimp CSS Inliner Tool](https://templates.mailchimp.com/resources/inline-css/)
+The CompSoc Logo at the top of the SU page is used to inject a ReactJS page

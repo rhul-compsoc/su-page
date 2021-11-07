@@ -3,13 +3,15 @@ import React, { ReactNode } from "react";
 const Section = ({
   title,
   tag,
+  className,
   children,
 }: {
-  title: string;
-  tag: string;
+  title?: string;
+  tag?: string;
+  className?: string;
   children?: ReactNode;
 }) => (
-  <div>
+  <div className={className}>
     {title && (
       <h3 className="rhulcompsoc-h3">
         {title}
