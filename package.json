@@ -1,0 +1,29 @@
+{
+  "name": "su-page",
+  "version": "1.0.0",
+  "repository": "git@github.com:rhul-compsoc/su-page.git",
+  "author": "Leondro Lio <github@leondrolio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-dom": "^17.0.9",
+    "parcel": "^2.0.0-rc.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.0.0-rc.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "@types/react-helmet": "^6.1.4"
+  },
+  "targets": {
+    "browser": {
+      "context": "browser",
+      "includeNodeModules": true
+    }
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.tsx"
+  }
+}

@@ -1,0 +1,89 @@
+.rhulcompsoc {
+  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, Helvetica Neue, sans-serif;
+  line-height: normal;
+  letter-spacing: normal;
+  box-sizing: border-box;
+}
+
+.rhulcompsoc .rhulcompsoc-h3 {
+  color: #c32126;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+.rhulcompsoc .rhulcompsoc-h4 {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-top: unset;
+  margin-bottom: 0.5em;
+}
+
+.rhulcompsoc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.rhulcompsoc-button {
+  padding: 1em 3em;
+  margin: 0.25em;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: grey;
+  background-color: grey;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.rhulcompsoc-button-red {
+  border-color: #c32126;
+  background-color: #c32126;
+  color: white;
+}
+.rhulcompsoc-button-red:hover {
+  border-color: #c32126;
+  background-color: white;
+  color: #c32126;
+}
+
+.rhulcompsoc-button-white {
+  border-color: #c32126;
+  background-color: white;
+  color: #c32126;
+}
+.rhulcompsoc-button-white:hover {
+  border-color: #c32126;
+  background-color: #c32126;
+  color: white;
+}
+
+.rhulcompsoc-button-discord {
+  border-color: #7289da;
+  background-color: #7289da;
+  color: white;
+}
+.rhulcompsoc-button-discord:hover {
+  border-color: #7289da;
+  background-color: white;
+  color: #7289da;
+}
