@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import { Section } from "./components/Section";
 import { Buttons } from "./components/Buttons";
 import { Button } from "./components/Button";
-import "./index.scss";
 
 class Component extends React.Component {
   render() {
