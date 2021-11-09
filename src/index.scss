@@ -4,31 +4,31 @@
   line-height: normal;
   letter-spacing: normal;
   box-sizing: border-box;
+  
+  .rhulcompsoc-h3 {
+    color: #c32126;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+      Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+  
+  .rhulcompsoc .rhulcompsoc-h4 {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+      Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-top: unset;
+    margin-bottom: 0.5em;
 }
-
-.rhulcompsoc .rhulcompsoc-h3 {
-  color: #c32126;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  margin-top: unset;
-  margin-bottom: unset;
-}
-
-.rhulcompsoc .rhulcompsoc-h4 {
-  color: black;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  letter-spacing: normal;
-  text-transform: none;
-  line-height: 1;
-  margin-top: unset;
-  margin-bottom: 0.5em;
 }
 
 .rhulcompsoc-buttons {
