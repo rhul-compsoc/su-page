@@ -19,9 +19,6 @@
   },
   "targets": {
     "browser": {
-      "engines": {
-        "browsers": "> 0.5%, last 2 versions, not dead"
-      },
       "context": "browser",
       "includeNodeModules": true,
       "publicUrl": "https://su-page.computingsociety.dev/"
@@ -29,6 +26,6 @@
   },
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.tsx"
+    "build": "parcel build src/index.html"
   }
 }
