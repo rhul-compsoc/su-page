@@ -29,6 +29,10 @@
     margin-top: unset;
     margin-bottom: 0.5em;
   }
+
+  .rhulcompsoc-hidden {
+    visibility: hidden;
+  }
 }
 
 .rhulcompsoc-buttons {
@@ -94,6 +98,7 @@
   border-color: #eb6824;
   background-color: #eb6824;
   color: white;
+  cursor: pointer;
 }
 .rhulcompsoc-button-hackaway:hover {
   border-color: #eb6824;

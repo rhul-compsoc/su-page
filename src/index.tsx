@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Section } from "./components/Section";
 import { Buttons } from "./components/Buttons";
 import { Button } from "./components/Button";
+import { TitoWidget } from "./components/TitoWidget";
 
 class Component extends React.Component {
   render() {
@@ -46,9 +47,7 @@ class Component extends React.Component {
             Saturday 5th February - Sunday 6th February 2022
           </p>
           <Buttons>
-            <Button className="rhulcompsoc-button-hackaway" href="https://ti.to/royal-hackaway/v5">
-              Tickets
-            </Button>
+            <TitoWidget event_name="royal-hackaway/v5" releases="hacker" label="Get your tickets!" />
             <Button className="rhulcompsoc-button-hackaway" href="https://royalhackaway.com/">
               Learn More
             </Button>
