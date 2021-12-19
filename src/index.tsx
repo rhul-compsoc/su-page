@@ -150,6 +150,10 @@ class Component extends React.Component {
             Find out more
           </Button>
         </Section>
+        <hr />
+        <Section>
+          <a href="https://github.com/rhul-compsoc/su-page">made with ❤ in Egham</a>
+        </Section>
       </div>
     );
   }
