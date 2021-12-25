@@ -47,7 +47,7 @@ class Component extends React.Component {
             Saturday 5th February - Sunday 6th February 2022
           </p>
           <Buttons>
-            <TitoWidget event_name="royal-hackaway/v5" releases="hacker" label="Get your tickets!" />
+            <TitoWidget event_name="royal-hackaway/v5" releases="" label="Get your tickets!" />
             <Button className="rhulcompsoc-button-hackaway" href="https://royalhackaway.com/">
               Learn More
             </Button>
