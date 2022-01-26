@@ -20,8 +20,7 @@
   "targets": {
     "browser": {
       "context": "browser",
-      "includeNodeModules": true,
-      "publicUrl": "https://su-page.computingsociety.dev/"
+      "includeNodeModules": true
     }
   },
   "scripts": {
