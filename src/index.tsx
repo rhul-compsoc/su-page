@@ -40,19 +40,6 @@ class Component extends React.Component {
           </Button>
         </Buttons>
 
-        <Section className="rhulcompsoc-section-hackaway">
-          <img className="rhulcompsoc-hackaway-logo" src="https://su.rhul.ac.uk/asset/Organisation/7306/rh-white-montserrat-v5.svg" />
-          <p>
-            Windsor Building, Royal Holloway, University of London<br />
-            Saturday 5th February - Sunday 6th February 2022
-          </p>
-          <Buttons>
-            <TitoWidget event_name="royal-hackaway/v5" releases="" label="Get your tickets!" />
-            <Button className="rhulcompsoc-button-hackaway" href="https://royalhackaway.com/">
-              Learn More
-            </Button>
-          </Buttons>
-        </Section>
         <Section title="Events" tag="Our upcoming events">
           <iframe
             src="https://outlook.office365.com/owa/calendar/c7e1f5e07db149d6aba796592271f23b@computingsociety.co.uk/4a31afa127d440e18dcf3a5a529f0b492292299079619492672/calendar.html"
