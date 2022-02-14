@@ -1,13 +1,7 @@
-import React, { ReactNode } from "react"
+import React, { ReactNode } from "react";
 
-const Buttons = ({
-  children,
-}: {
-  children?: ReactNode;
-}) => (
-  <div className="rhulcompsoc-buttons">{children}</div>
-)
+const Buttons = ({ children }: { children?: ReactNode }) => (
+  <div className="flex justify-center flex-wrap gap-3">{children}</div>
+);
 
-export {
-  Buttons
-}
+export { Buttons };

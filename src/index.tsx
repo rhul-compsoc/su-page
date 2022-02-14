@@ -19,20 +19,20 @@ class Component extends React.Component {
 
         <Buttons>
           <Button
-            className="rhulcompsoc-button-red"
+            className="border-compsoc-red bg-compsoc-red hover:bg-transparent text-white hover:text-compsoc-red"
             href="https://computingsociety.co.uk/"
             target="_blank"
           >
             computingsociety.co.uk
           </Button>
           <Button
-            className="rhulcompsoc-button-white"
+            className="border-compsoc-red bg-transparent hover:bg-compsoc-red text-compsoc-red hover:text-white"
             href="mailto:hello@computingsociety.co.uk"
           >
             E-mail Us!
           </Button>
           <Button
-            className="rhulcompsoc-button-discord"
+            className="border-discord-blurple bg-discord-blurple hover:bg-transparent text-white hover:text-discord-blurple"
             href="https://dc.cmpsc.uk/"
             target="_blank"
           >
@@ -75,7 +75,8 @@ class Component extends React.Component {
             members to get together. From our weekly Friday pub social, cliché
             Minecraft survival games and other gaming activities, events on our
             discord server, to getting involved with SU club nights with 80s 90s
-            00s. There is always some type of social to get our members involved.
+            00s. There is always some type of social to get our members
+            involved.
           </p>
         </Section>
         <hr />
@@ -105,18 +106,26 @@ class Component extends React.Component {
             If you want to join our online Discord community and talk to our
             members of past and present, you can join it using the link below.
           </p>
-          <ul>
+          <ul className="list-disc list-inside text-blue-600 underline underline-offset-1">
             <li>
-              <a target="_blank" href="https://dc.cmpsc.uk/">Discord</a>
+              <a target="_blank" href="https://dc.cmpsc.uk/">
+                Discord
+              </a>
             </li>
             <li>
-              <a target="_blank" href="https://github.com/rhul-compsoc">GitHub</a>
+              <a target="_blank" href="https://github.com/rhul-compsoc">
+                GitHub
+              </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.facebook.com/rhulcompsoc">Facebook</a>
+              <a target="_blank" href="https://www.facebook.com/rhulcompsoc">
+                Facebook
+              </a>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/rhulcompsoc">Twitter</a>
+              <a target="_blank" href="https://twitter.com/rhulcompsoc">
+                Twitter
+              </a>
             </li>
             <li>
               <a href="mailto:hello@computingsociety.co.uk">Email</a>
@@ -130,7 +139,7 @@ class Component extends React.Component {
         >
           <p>Interested in supporting us?</p>
           <Button
-            className="rhulcompsoc-button-red"
+            className="border-compsoc-red bg-compsoc-red hover:bg-transparent text-white hover:text-compsoc-red"
             href="https://cmpsc.uk/sponsor"
             target="_blank"
           >
@@ -139,7 +148,9 @@ class Component extends React.Component {
         </Section>
         <hr />
         <Section>
-          <a href="https://github.com/rhul-compsoc/su-page">made with ❤ in Egham</a>
+          <a href="https://github.com/rhul-compsoc/su-page">
+            made with ❤ in Egham
+          </a>
         </Section>
       </div>
     );

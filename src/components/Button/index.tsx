@@ -11,7 +11,11 @@ const Button = ({
   target?: string;
   children?: ReactNode;
 }) => (
-  <a href={href} target={target} className={`rhulcompsoc-button ${className}`}>
+  <a
+    href={href}
+    target={target}
+    className={`inline-block border-4 py-5 px-16 transition-colors font-heading font-bold ${className}`}
+  >
     {children}
   </a>
 );
