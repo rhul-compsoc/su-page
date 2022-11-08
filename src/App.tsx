@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '@/index.css';
 import { Section } from '@/components/Section';
 import { Buttons } from '@/components/Buttons';
 import { Button } from '@/components/Button';
 import ClickyButton from '@/components/ClickyButton';
+import DVDLogo from '@/components/DVDLogo';
 
 const App = () => {
   const [calendarDownloaded, setCalendarDownloaded] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [spin, setSpin] = useState(false);
 
+  // Whenever a corner is hit by the DVD, the tweet will spin!
+  useEffect(() => {
+    if (spin) {
+      const interval = setTimeout(() => setSpin(false), 2000);
+      return () => clearTimeout(interval);
+    }
+    return () => {};
+  }, [spin]);
+
+  const cornerHit = () => {
+    setSpin(true);
+  };
   return (
-    <div className="rhulcompsoc">
+    <div className={`rhulcompsoc ${spin ? 'animate-spin' : ''}`} ref={containerRef}>
+      <DVDLogo containerRef={containerRef} cornerHit={cornerHit} />
       <Buttons>
         <Button
           className="border-compsoc-red bg-compsoc-red text-white hover:bg-transparent hover:text-compsoc-red"
