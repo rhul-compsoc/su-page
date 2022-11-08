@@ -77,7 +77,7 @@ const ClickyButton = ({
 
   return (
     <div className={`${baseParentStyle} ${className}`}>
-      <div className="w-5/6 md:w-1/2 items-center justify-center max-w-max rounded-3xl mt-10 mb-10 h-24">
+      <div className="w-5/6 md:w-1/2 items-center justify-center max-w-max rounded-3xl h-24">
         <a
           href={url}
           target="_blank"

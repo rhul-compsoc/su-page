@@ -1,12 +1,11 @@
 {
-  "name": "Template-Project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "su-page",
+  "private": false,
+  "version": "1.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@animxyz/core": "^0.6.6",
@@ -104,6 +103,12 @@
       "react/prop-types": 0,
       "no-console": 0,
       "no-alert": 0
+    }
+  },
+  "targets": {
+    "browser": {
+      "context": "browser",
+      "includeNodeModules": true
     }
   }
 }
