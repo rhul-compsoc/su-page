@@ -38,25 +38,21 @@ const App = () => {
         <iframe
           src="https://outlook.office365.com/owa/calendar/8ec001cdff644d9d8e0e63646602a521@computingsociety.co.uk/339d3bf686dc471e9fcbcfd8fc5448497927031125383392704/calendar.html"
           width="100%"
-          height="800"
+          height="500"
           frameBorder="0"
           title="Calendar"
+          className="mt-3"
         />
       </Section>
-      <a
-        href="https://outlook.office365.com/owa/calendar/8ec001cdff644d9d8e0e63646602a521@computingsociety.co.uk/339d3bf686dc471e9fcbcfd8fc5448497927031125383392704/calendar.ics"
-        target="_blank"
-        rel="noreferrer"
-        download
-      >
-        <ClickyButton
-          text="Download The Calendar!"
-          clickAction={() => {
-            setCalendarDownloaded(true);
-          }}
-          className={calendarDownloaded ? 'h-0' : ''}
-        />
-      </a>
+
+      <ClickyButton
+        text="Save The Calendar!"
+        url="https://outlook.office.com/calendar/addcalendar?url=https%3A%2F%2Foutlook.office365.com%2Fowa%2Fcalendar%2F8ec001cdff644d9d8e0e63646602a521%40computingsociety.co.uk%2F339d3bf686dc471e9fcbcfd8fc5448497927031125383392704%2Fcalendar.ics&name=Computing%20Society%20Events!"
+        clickAction={() => {
+          setCalendarDownloaded(true);
+        }}
+        className={calendarDownloaded ? 'display-none w-0 h-0 cursor-default' : ''}
+      />
       <hr />
       <Section title="About Us" tag="What we do">
         <p>

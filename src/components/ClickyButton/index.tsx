@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useSound } from 'use-sound';
+import clickSound from '@/assets/click.mp3';
 
 const baseStyle = `
 bg-gradient-to-r 
@@ -40,21 +42,23 @@ const clickedAnimations = [
   'animate__flipOutX',
 ];
 
-const baseParentStyle = 'w-full flex justify-center items-center z-0 cursor-pointer min-h-fit min-w-fit';
+const baseParentStyle = 'w-full flex justify-center items-center z-0 min-h-fit min-w-fit';
 
 interface ButtonProps {
 	text: string;
 	clickAction: () => void;
 	className: string;
+	url: string;
 }
 
 /**
  * Imported from https://github.com/arcio-uk/Attendance-Frontend/blob/3a911c937364ec49ad8ff45458acf291f137db42/src/components/dashboard/AttendanceButton/Button.jsx
  */
 const ClickyButton = ({
-  text, clickAction, className,
+  text, clickAction, className, url,
 }: ButtonProps) => {
   const [clicked, setClicked] = useState(false);
+  const [play] = useSound(clickSound);
 
   let animation = '';
 
@@ -66,6 +70,7 @@ const ClickyButton = ({
 
   useEffect(() => {
     if (clicked) {
+      play();
       clickAction();
     }
   }, [clicked]);
@@ -73,11 +78,19 @@ const ClickyButton = ({
   return (
     <div className={`${baseParentStyle} ${className}`}>
       <div className="w-5/6 md:w-1/2 items-center justify-center max-w-max rounded-3xl mt-10 mb-10 h-24">
-        <div className={`animate__animated ${animation} h-full`} onClick={() => { setClicked(true); }}>
-          <div className={baseStyle}>
-            {text}
+        <a
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+          download
+          className="cursor-pointer"
+        >
+          <div className={`animate__animated ${animation} h-full`} onClick={() => { setClicked(true); }}>
+            <div className={baseStyle}>
+              {text}
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
