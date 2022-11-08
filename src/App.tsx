@@ -34,6 +34,29 @@ const App = () => {
         </Button>
       </Buttons>
 
+      <Section title="About Us" tag="What we do">
+        <p className="text-xl">
+          CompSoc exists to create a setting where like-minded computing
+          enthusiasts can interact and socialise. Our core aim is to make the
+          student experience more enjoyable for those with any interest in
+          Computing and Computer Science. We run and arrange events such as
+          beginner workshops, Capture The Flag events, Hackathons, and social
+          events. With a keen openness to collaborating with other societies and
+          external companies in order to increase the diversity of the
+          activities that we offer.
+        </p>
+      </Section>
+
+      <ClickyButton
+        text="Save The Calendar!"
+        url="https://outlook.office.com/calendar/addcalendar?url=https%3A%2F%2Foutlook.office365.com%2Fowa%2Fcalendar%2F8ec001cdff644d9d8e0e63646602a521%40computingsociety.co.uk%2F339d3bf686dc471e9fcbcfd8fc5448497927031125383392704%2Fcalendar.ics&name=Computing%20Society%20Events!"
+        clickAction={() => {
+          setCalendarDownloaded(true);
+        }}
+        className={
+          calendarDownloaded ? 'display-none w-0 h-0 cursor-default' : ''
+        }
+      />
       <Section title="Events" tag="Our upcoming events">
         <iframe
           src="https://outlook.office365.com/owa/calendar/8ec001cdff644d9d8e0e63646602a521@computingsociety.co.uk/339d3bf686dc471e9fcbcfd8fc5448497927031125383392704/calendar.html"
@@ -45,26 +68,22 @@ const App = () => {
         />
       </Section>
 
-      <ClickyButton
-        text="Save The Calendar!"
-        url="https://outlook.office.com/calendar/addcalendar?url=https%3A%2F%2Foutlook.office365.com%2Fowa%2Fcalendar%2F8ec001cdff644d9d8e0e63646602a521%40computingsociety.co.uk%2F339d3bf686dc471e9fcbcfd8fc5448497927031125383392704%2Fcalendar.ics&name=Computing%20Society%20Events!"
-        clickAction={() => {
-          setCalendarDownloaded(true);
-        }}
-        className={calendarDownloaded ? 'display-none w-0 h-0 cursor-default' : ''}
-      />
       <hr />
-      <Section title="About Us" tag="What we do">
+      <hr />
+      <Section
+        title="Membership"
+        tag="Our members always come first. We aim to provide great experiences for everyone."
+      >
         <p>
-          CompSoc exists to create a setting where like-minded computing
-          enthusiasts can interact and socialise. Our core aim is to make the
-          student experience more enjoyable for those with any interest in
-          Computing and Computer Science. We run and arrange events such as
-          beginner workshops, Capture The Flag events, Hackathons, and social
-          events. With a keen openness to collaborating with other societies and
-          external companies in order to increase the diversity of the
-          activities that we offer.
+          We have a standard membership fee of £8, which goes directly to
+          funding the events and activities we run throughout the year. By
+          purchasing a member you not only support the events we run but also
+          guarantees you will be able to attend all of the events we run, along
+          with picking up the merchandise we give out throughout the year.
         </p>
+      </Section>
+      <hr />
+      <Section title="More about us!" tag="Who we are">
         <p>
           We support the academics of not only Computer Science, but also
           Physics, Economics, and any other subjects that have a computing
@@ -83,20 +102,6 @@ const App = () => {
           00s. There is always some type of social to get our members involved.
         </p>
       </Section>
-      <hr />
-      <Section
-        title="Membership"
-        tag="Our members always come first. We aim to provide great experiences for everyone."
-      >
-        <p>
-          We have a standard membership fee of £8, which goes directly to
-          funding the events and activities we run throughout the year. By
-          purchasing a member you not only support the events we run but also
-          guarantees you will be able to attend all of the events we run, along
-          with picking up the merchandise we give out throughout the year.
-        </p>
-      </Section>
-      <hr />
       <Section
         title="Contact Us"
         tag="Talk to us with ideas, questions and comments"
