@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '@/index.css';
-import { Link } from 'react-router-dom';
 import { Section } from '@/components/Section';
 import { Buttons } from '@/components/Buttons';
 import { Button } from '@/components/Button';
