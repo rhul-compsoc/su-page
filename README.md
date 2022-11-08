@@ -1,11 +1,3 @@
-# My Web Project Template
+# The SU-Page for the Computing Society
 
-This template uses:
- - [x] Yarn
- - [x] Typescript
- - [x] React
- - [x] Tailwind
- - [x] Absolute Paths ('@/components/MyComponent')
- - [x] Vite
- - [x] Github Pages, For Easy Deployment
- - [x] Eslint
+Here's the contents of the iframe on the site
