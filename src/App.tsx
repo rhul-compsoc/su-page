@@ -16,7 +16,7 @@ const App = () => {
           href="https://computingsociety.co.uk/"
           target="_blank"
         >
-          computingsociety.co.uk
+          Our Site
         </Button>
         <Button
           className="border-compsoc-red bg-transparent text-compsoc-red hover:bg-compsoc-red hover:text-white"
